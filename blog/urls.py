@@ -39,7 +39,11 @@ urlpatterns = [
     # mydjangosite.com/comment/2/remove
     path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
 
+    # 127.0.0.1:8000//comment/2/approve -- local
+    # mydjangosite.com/comment/2/approve
     path('comment/<int:pk>approve/', views.comment_approve, name='comment_approve'),
 
-
+    # 127.0.0.1:8000/signup -- local
+    # mydjangosite.com/signup
+    path('signup/', views.signup, name='signup')
  ]
